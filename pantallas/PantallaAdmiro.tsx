@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { View, Text, StyleSheet, Image } from 'react-native';
+import Evaluacion from '../componets/evaluacion/Evaluacion';
 
 const PantallaAdmiro: React.FC = () => {
+  const [calificacion, setCalificacion] = useState(0); // Estado para manejar la calificación
+
   return (
     <View style={styles.container}>
       <Image
@@ -11,6 +14,7 @@ const PantallaAdmiro: React.FC = () => {
       <Text style={styles.titulo}>Lionel Messi</Text>
       <Text style={styles.texto}>Posición: Delantero</Text>
       <Text style={styles.texto}>Equipo: Inter Miami</Text>
+      <Evaluacion calificacion={calificacion} onCalificacionChange={setCalificacion} />
     </View>
   );
 };

@@ -10,6 +10,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import MiPantalla from './pantallas/MiPantalla';
 import PantallaAdmiro from './pantallas/PantallaAdmiro';
+import Evaluacion from './componets/evaluacion/Evaluacion';
 
 const SwitchNavigator = createNativeStackNavigator();
 
